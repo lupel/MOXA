@@ -1,0 +1,19 @@
+VERSION ""
+
+
+BS_:
+
+BU_:
+
+
+BO_ 100 ThermalCAN_Duo: 8 Vector__XXX
+ SG_ Ch2_FAULT : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ch1_FAULT : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ch2_Temp : 32|14@1- (0.25,0) [-2048|2047.75] "C" Vector__XXX
+ SG_ Ch1_Temp : 0|14@1- (0.25,0) [-2048|2047.75] "C" Vector__XXX
+
+
+
+ VAL_ 100 Ch1_FAULT 1 "Probe OK,0" 255 "Probe fault,1" ;
+ VAL_ 100 Ch1_Temp 0 "temp1,128" ;
+
